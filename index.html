@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="mynav">
         <div class="logo">
-            <img class="nav-logo" src="resources/logo.png" alt="logo" srcset="">
+            <img id="nav-logo" class="nav-logo" src="resources/logo.png" alt="logo" srcset="">
         </div>
         <div class="hamburger">
             <div class="line1"></div>
@@ -23,7 +23,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
@@ -33,6 +33,7 @@
         <div class="hero">
             <div class="hero-left">
                 <h1>JEFFREY LONZANIDA</h1>
+                <p></p>
                 <div class="socmed">
                     <!-- facebook icon -->
                     <a href="">
@@ -90,11 +91,26 @@
             </svg>
         </div>
     </div>
-    <div class="about">
-        <h1>About me</h1>
+    <div link="about" class="about">
+        <h1 style="font-weight:bold">About me</h1>
         
     </div>
     <script src="index.js"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("mynav").style.height = "4rem";
+                    document.getElementById("nav-logo").style.width = "45px";
+                    document.getElementById("nav-logo").style.height = "45px";
+                } else {
+                    document.getElementById("mynav").style.height = "6rem";
+                    document.getElementById("nav-logo").style.width = "55px";
+                    document.getElementById("nav-logo").style.height = "55px";
+                }
+            }
+    </script>
 </body>
 
 </html>
