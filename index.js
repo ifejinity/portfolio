@@ -12,6 +12,7 @@ hamburger.addEventListener('click', ()=>{
 
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
+    document.getElementById("mybody").style.overflow-y="hidden";
 });
 
 // Nav effect
