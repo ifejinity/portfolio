@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="png" href="resources/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Jeffrey Lonzanida</title>
@@ -29,11 +30,12 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Home section -->
     <div class="waves">
-        <div class="hero">
+        <div id="home" class="hero">
             <div class="hero-left">
                 <h1>JEFFREY LONZANIDA</h1>
-                <p></p>
                 <div class="socmed">
                     <!-- facebook icon -->
                     <a href="">
@@ -78,6 +80,14 @@
                         </svg>
                     </a>
                 </div>
+                <div>
+                    <a class="fancy" href="#">
+                        <span class="top-key"></span>
+                        <span class="text">Download CV</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                </div>
             </div>
             <div class="hero-img">
                 <img class="jeffreylonzanida" src="resources/hero-img.jpg" alt="Jeffrey Lonzanida" srcset="">
@@ -91,32 +101,33 @@
             </svg>
         </div>
     </div>
-    <div link="about" class="about">
-        <div class="about-left">
-            
-        </div>
-        <div class="about-right">
-            <h1 style="font-weight:bold">About me</h1>
-        </div>
-    </div>
-    <script src="index.js"></script>
-    <script>
-        window.onscroll = function () { scrollFunction() };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("mynav").style.height = "4rem";
-                    document.getElementById("nav-logo").style.width = "45px";
-                    document.getElementById("nav-logo").style.height = "45px";
-                    document.getElementById("mynav").style.backgroundColor = "black";
-                } else {
-                    document.getElementById("mynav").style.height = "6rem";
-                    document.getElementById("nav-logo").style.width = "55px";
-                    document.getElementById("nav-logo").style.height = "55px";
-                    document.getElementById("mynav").style.backgroundColor = "transparent";
-                }
-            }
+    <!-- About section -->
+    <main>
+        <div id="about" class="about">
+            <div class="about-left">
+                <img data-aos="fade-up" class="aboutme-svg" src="resources/aboutme-svg.svg" alt="aboutme-svg" srcset="">
+            </div>
+            <div class="about-right">
+                <h1 data-aos="fade-up" style="font-weight:bold">About me</h1>
+                <br>
+                <h2 data-aos="fade-up">I'm Jeffrey Lonzanida</h2>
+                <p data-aos="fade-up">I'm currently taking Bachelor of Science in Information Technology at University of Rizal System Binangonan
+                Campus.
+                He has endless patience, an average degree of creativity and problem solving, desire to learn, logical thinking, and
+                self-discipline.</p>
+                <br>
+                <div data-aos="fade-up" class="info">
+                    <p>Age: 22 years old</p>
+                    <p>Birthday: January 08, 2001</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
-
 </html>
