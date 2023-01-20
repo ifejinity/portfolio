@@ -671,9 +671,10 @@ main{
 }
 
 .logo-loader{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     position: fixed;
+    padding-top: 6px;
 }
 
 .loading {
