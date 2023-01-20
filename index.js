@@ -29,3 +29,18 @@ function scrollFunction() {
         document.getElementById("mynav").style.backgroundColor = "transparent";
     }
 }
+
+// allows to remove overflow of the body
+document.getElementById("hamburger").addEventListener("click", overflow);
+function overflow() {
+    var x = document.getElementById("mybody").style.overflow;
+
+    if (x == "hidden")
+    {
+        document.getElementById("mybody").style.overflow = "scroll";
+    }
+    else
+    {
+        document.getElementById("mybody").style.overflow = "hidden";
+    }
+}
