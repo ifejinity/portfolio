@@ -686,6 +686,7 @@ main{
     position: relative;
     transition: 0.4s;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .card-child{
