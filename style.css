@@ -36,7 +36,7 @@ nav {
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 20;
     transition: 0.3s;
 }
 
@@ -646,16 +646,177 @@ main{
 
 /* project section */
 .project-section{
-    height: 600px;
-    width: 100%;
+    height: max-content;
     background-color: black;
     display: flex;
-    justify-content: center;
-    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 30px;
+    position: relative;
 }
 
 .project-section h1{
     color: white;
+}
+
+.projects-list{
+    width: 80%;
+    height: max-content;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+@media (max-width:690px){
+    .projects-list{
+        width: 90%;
+    }
+}
+
+/* card */
+.card {
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.card-info{
+    height: 50px;
+    background-color: #282936;
+    transition: 0.2s;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+}
+
+.card-info h3{
+    color: white;
+}
+
+.card:hover .card-info{
+    height: 100px;
+}
+
+@media (max-width:1370px) {
+    .projects-list{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:900px) {
+    .projects-list {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width:424px) {
+    .card{
+        width: 210px;
+        height: 300px;
+    }
+}
+
+/* more projects */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #61DAFB;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid  black;
+    border-right: 0.125rem solid black;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #61DAFB;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: black;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: black;
 }
 
 /* loader */
@@ -725,4 +886,9 @@ main{
     100% {
         transform: rotate(-360deg);
     }
+}
+
+/* Contact Section */
+.contact-section{
+    height: 500px;
 }

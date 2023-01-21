@@ -63,3 +63,5 @@ document.onreadystatechange = function () {
         document.getElementById("mybody").style.overflow = "hidden";
     }
 }
+
+// Swiper js
