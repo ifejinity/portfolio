@@ -943,6 +943,16 @@ button:hover .button-text {
     margin-bottom: 40px;
 }
 
+.education-child{
+    width: 80%;
+}
+
+@media (max-width:900px){
+    .education-child{
+        width: 90%;
+    }
+}
+
 .education-section h1{
     text-align: center;
 }
@@ -1205,7 +1215,6 @@ button:hover .button-text {
         position: relative;
         margin: 1em 1em 0 1em;
         padding: 1em;
-
         z-index: 15;
     }
 
