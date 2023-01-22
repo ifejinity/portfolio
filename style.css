@@ -715,7 +715,7 @@ main{
     height: 40px;
     transform: rotateX(90deg);
     border-radius: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 
 .live-btn{
@@ -728,7 +728,7 @@ main{
     height: 40px;
     transform: rotateX(90deg);
     border-radius: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
 }
 
 .card-info h3{
