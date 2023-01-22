@@ -683,7 +683,7 @@ main{
     background: #fff;
     display: flex;
     flex-direction: column;
-    border-radius: 22px;
+    border-radius: 20px;
     position: relative;
     transition: 0.4s;
     cursor: pointer;
@@ -700,15 +700,13 @@ main{
 .card-info{
     height: 50px;
     background-color: #282936;
-    transition: 0.2s;
+    transition: 0.3s;
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
 }
 
 .code-btn{
-    text-decoration: none;
     color: white;
-    border-color: black 1px solid;
     background-color: #367E18;
     opacity: 0;
     transition: 0.3s;
@@ -720,9 +718,7 @@ main{
 }
 
 .live-btn{
-    text-decoration: none;
     color: white;
-    border-color: black 1px solid;
     background-color: #CC3636;
     opacity: 0;
     transition: 0.3s;
