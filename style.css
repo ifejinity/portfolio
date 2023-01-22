@@ -1227,3 +1227,33 @@ button:hover .button-text {
         margin: 1em 4em 0 4em;
     }
 }
+
+/* footer */
+.custom-shape-divider-bottom-1674357839 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1674357839 svg {
+    position: relative;
+    display: block;
+    width: calc(148% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1674357839 .shape-fill {
+    fill: black;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
