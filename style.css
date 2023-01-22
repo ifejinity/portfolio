@@ -707,6 +707,7 @@ main{
 
 .code-btn{
     color: white;
+    border: none;
     background-color: #367E18;
     opacity: 0;
     transition: 0.3s;
@@ -719,6 +720,7 @@ main{
 
 .live-btn{
     color: white;
+    border:none;
     background-color: #CC3636;
     opacity: 0;
     transition: 0.3s;
