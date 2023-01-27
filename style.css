@@ -487,18 +487,18 @@ nav {
 
 .about-left{
     width: 50%;
-    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    order: 1;
 }
 
 .about-right{
     width: 50%;
-    order: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
+    order: 2;
 }
 
 .about-right p{
@@ -520,7 +520,8 @@ main{
 }
 
 .aboutme-svg{
-    width: 100%;
+    width: 65%;
+    z-index: -1;
 }
 
 @media (max-width: 767px) {
