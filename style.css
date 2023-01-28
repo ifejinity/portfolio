@@ -253,7 +253,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 100px;
+    margin-top: 100px;
     width: 75%;
 }
 
@@ -288,26 +288,32 @@ nav {
     justify-content: flex-end;
 }
 
-.custom-shape-divider-bottom-1673519652 {
+.custom-shape-divider-bottom-1674911705 {
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
-    background-color: transparent;
 }
 
-.custom-shape-divider-bottom-1673519652 svg {
+.custom-shape-divider-bottom-1674911705 svg {
     position: relative;
     display: block;
-    width: calc(145% + 1.3px);
-    height: 175px;
-    transform: rotateY(180deg);
+    width: calc(131% + 1.3px);
+    height: 141px;
 }
 
-.custom-shape-divider-bottom-1673519652 .shape-fill {
+.custom-shape-divider-bottom-1674911705 .shape-fill {
     fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1674911705 svg {
+        width: calc(135% + 1.3px);
+        height: 93px;
+    }
 }
 
 .jeffreylonzanida{
@@ -448,6 +454,8 @@ nav {
     flex-direction: row;
     padding-top: 15px;
     gap: 15px;
+    background-image: url("/resources/white-bg.svg");
+    background-size: cover;
 }
 
 .about-left{
@@ -486,7 +494,7 @@ main{
 
 .aboutme-svg{
     width: 65%;
-    z-index: -1;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -507,6 +515,7 @@ main{
     background-color:black;
     color: white;
     padding-bottom: 15px;
+    padding-top: 50px;
 }
 
 .skills-child h1{
@@ -555,27 +564,6 @@ main{
 .skills-p1 img{
     height: 60px;
     width: 60px;
-}
-
-.custom-shape-divider-top-1674308021 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1674308021 svg {
-    position: relative;
-    display: block;
-    width: calc(144% + 1.3px);
-    height: 163px;
-}
-
-.custom-shape-divider-top-1674308021 .shape-fill {
-    fill: #FFFFFF;
 }
 
 .grid-container {
@@ -905,6 +893,8 @@ button:hover .button-text {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-image: url("/resources/white-bg.svg");
+    background-size: cover;
 }
 
 .education-child{

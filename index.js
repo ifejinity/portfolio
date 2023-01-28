@@ -56,7 +56,7 @@ document.onreadystatechange = function () {
                 jQuery("mybody").fadeIn(500);
             });
             document.getElementById("mybody").style.overflow = "scroll";
-        }, 1000);
+        }, 100);
     }
     else
     {
