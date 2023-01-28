@@ -897,6 +897,7 @@ button:hover .button-text {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .education-child{
@@ -1207,6 +1208,7 @@ button:hover .button-text {
 }
 
 .footer{
+    position: relative;
     height: 50px;
     width: 100%;
     background-color: black;
