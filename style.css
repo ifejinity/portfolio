@@ -321,10 +321,6 @@ nav {
 }
 
 /* download cv */
-.fancy{
-    color: white;
-}
-
 .download-button {
     position: relative;
     border-width: 0;
@@ -367,6 +363,7 @@ nav {
     background-color: #01e056;
     border: solid 1px #01e0572d;
     transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+    color: white;
 }
 
 .download-button:hover .download {
