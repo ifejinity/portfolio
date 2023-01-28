@@ -486,6 +486,7 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    position: relative;
 }
 
 .info{
