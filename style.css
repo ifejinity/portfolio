@@ -479,6 +479,8 @@ nav {
 .aboutimg-left{
     position: absolute;
     width: 300px;
+    bottom: 0;
+    left:0;
 }
 
 main{
