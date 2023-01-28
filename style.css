@@ -512,6 +512,9 @@ main{
     .about-right, .about-left{
         width: 100%;
     }
+    .aboutimg-left{
+        width: 100%;
+    }
 }
 
 /* Skills section */
