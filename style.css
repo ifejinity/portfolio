@@ -476,6 +476,10 @@ nav {
     text-align: justify;
 }
 
+.aboutimg-left{
+    position: absolute;
+}
+
 main{
     display: flex;
     width: 100%;
