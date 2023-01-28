@@ -455,7 +455,7 @@ nav {
     padding-top: 15px;
     gap: 15px;
     background-image: url("/resources/white-bg.jpg");
-    background-size: cover;
+    background-size: contain;
 }
 
 .about-left{
