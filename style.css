@@ -460,7 +460,7 @@ nav {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     order: 1;
 }
 
@@ -515,6 +515,14 @@ main{
     .aboutimg-left{
         width: 100%;
     }
+
+    .about-left{
+        order: 2;
+    }
+
+    .about-right{
+        order: 1;
+    }
 }
 
 /* Skills section */
@@ -530,6 +538,13 @@ main{
 
 .skills-child h1{
     font-weight: bold;
+}
+
+.skills-section h1{
+    background-color: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .skills-child{
@@ -622,7 +637,10 @@ main{
 }
 
 .project-section h1{
-    color: white;
+    background-color: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .projects-list{
@@ -764,7 +782,8 @@ button.learn-more .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #61DAFB;
+    background-color: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     border-radius: 1.625rem;
 }
 
@@ -806,11 +825,17 @@ button.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #61DAFB;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
+}
+
+.button-text{
+    background-color: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 button:hover .circle {
@@ -823,7 +848,10 @@ button:hover .circle .icon.arrow {
 }
 
 button:hover .button-text {
-    color: black;
+    background-color: black;
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 /* loader */
@@ -901,9 +929,13 @@ button:hover .button-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     position: relative;
+}
+
+.white-bg{
+    
 }
 
 .education-child{
