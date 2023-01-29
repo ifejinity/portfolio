@@ -536,6 +536,7 @@ main{
     right:0;
     height: 100%;
     z-index: 1;
+    opacity: 60%;
 }
 
 .skills-section{
@@ -553,8 +554,6 @@ main{
 }
 
 .skills-section h1{
-    stroke: black;
-    stroke-width: 1px;
     background-color: rgb(131, 58, 180);
         background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
         -webkit-background-clip: text;
