@@ -481,6 +481,7 @@ nav {
     width: 60%;
     bottom: 0;
     left:0;
+    z-index: -2;
 }
 
 main{
@@ -500,7 +501,7 @@ main{
 
 .aboutme-svg{
     width: 65%;
-    z-index: 1;
+    z-index: -1;
 }
 
 @media (max-width: 767px) {
