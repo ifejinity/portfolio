@@ -526,6 +526,16 @@ main{
 }
 
 /* Skills section */
+.black-bg{
+    position:relative
+}
+
+.blackimg{
+    position: absolute
+    right:0;
+    height: 100%;
+}
+
 .skills-section{
     height: max-content;
     width: 100%;
