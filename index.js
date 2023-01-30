@@ -61,7 +61,7 @@ document.onreadystatechange = function () {
             jQuery(document).ready(function() {
                 jQuery(".modal-wip").fadeIn(500);
             });
-        }, 10000);
+        }, 5000);
     }
     else
     {
