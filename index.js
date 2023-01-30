@@ -69,7 +69,7 @@ document.onreadystatechange = function () {
     }
 }
 
-document.getElementById("wip-exit").addEventListener("click", HideWipModal);
+document.getElementById("exit-btn").addEventListener("click", HideWipModal);
 function HideWipModal(){
     jQuery(".modal-wip").fadeOut(500);
 }
