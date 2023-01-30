@@ -26,7 +26,7 @@ body {
 /* modal wip */
 .modal-wip{
     position: fixed;
-    background-image: url("/resources/underconstruction.jpg");
+    background-image: url("../resources/underconstruction.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 500px;
