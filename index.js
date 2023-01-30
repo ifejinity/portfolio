@@ -50,13 +50,18 @@ document.onreadystatechange = function () {
     var state = document.readyState
     if (state == 'complete') {
         setTimeout(function () {
-            // document.getElementById('loader').style.visibility = "hidden";
             jQuery(document).ready(function() {
                 jQuery('#loader').fadeOut(500);
                 jQuery("mybody").fadeIn(500);
             });
             document.getElementById("mybody").style.overflow = "scroll";
         }, 100);
+        // for wip modal show
+        setTimeout(function () {
+            jQuery(document).ready(function() {
+                jQuery(".modal-wip").fadeIn(500);
+            });
+        }, 5000);
     }
     else
     {
@@ -64,4 +69,7 @@ document.onreadystatechange = function () {
     }
 }
 
-// Swiper js
+document.getElementById("wip-exit").addEventListener("click", HideWipModal);
+function HideWipModal(){
+    jQuery(".modal-wip").fadeOut(500);
+}

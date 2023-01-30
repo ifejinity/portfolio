@@ -20,8 +20,47 @@ body {
         scrollbar-width: none;
         /* Firefox */
     background-color: #E8F9FD;
+    position: relative;
 }
 
+/* modal wip */
+.modal-wip{
+    position: fixed;
+    background-image: url(resources/underconstruction.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+    right: 50px;
+    bottom: 50px;
+    z-index: 3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px;
+    display: none;
+    background-position: center;
+}
+
+.wip-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wip-exit{
+    font-size: large;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-content{
+    position: relative;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
@@ -219,6 +258,33 @@ nav {
 
     li.fade {
         opacity: 1;
+    }
+}
+
+@media (max-width:650px){
+    .modal-wip{
+        width: 400px;
+        height: 200px;
+        right: 30px;
+        bottom: 30px;
+    }
+    .modal-wip h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:550px){
+    .modal-wip{
+        width:300px;
+    }
+}
+
+@media (max-width:450px){
+    .modal-wip{
+        width:200px;
+        height: 300px;
+        right: 20px;
+        bottom: 20px;
     }
 }
 
